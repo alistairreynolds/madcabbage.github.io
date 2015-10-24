@@ -1,0 +1,17 @@
+$base-foreground: #ccc;
+$base-background: rgba(10, 10, 10, 0.9);
+
+body{
+  background: $base-background;
+  background: url("../images/background.jpg") no-repeat center fixed;
+  background-size: cover;
+  color: $base-foreground;
+}
+
+.container{
+  background: $base-background;
+}
+
+.well{
+  @extend .container;
+}
