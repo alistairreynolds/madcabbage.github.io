@@ -19,8 +19,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     src: ['**.{jpg,gif,png}'],
-                    cwd: 'www/images/responsive_source',
-                    dest: 'www/images/responsive_resized/'
+                    cwd: 'playground/images/responsive_source',
+                    dest: 'playground/images/responsive_resized/'
                 }]
             }
         },
