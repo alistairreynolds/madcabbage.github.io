@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head>
+<head ng-app="Playground">
   <title>Alistair's Web Playground</title>
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -22,14 +22,15 @@
         <div class="well"><h1>About</h1></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6 page-content">
-        <div ng-view></div>
-      <div class="col-sm-6"><img class="img-responsive" src="images/responsive_source/header.jpg" alt="Picture of Alistair"></div>
+    <div class="row page-content">
+      <div ng-view></div>
+   
     </div>
   </div>
-  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
+
   <script src="js/app.js"></script>
 </body>
 </html>

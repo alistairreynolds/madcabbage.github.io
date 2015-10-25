@@ -1,4 +1,4 @@
-angular.module('PlaygroundPages', ['ngRoute'])
+angular.module('Playground', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
 
