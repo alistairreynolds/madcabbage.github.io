@@ -1,12 +1,4 @@
-var page = angular.module('phonecatApp', []);
-
-phonecatApp.controller('PhoneListCtrl', function ($scope) {
-  $scope.phones = [
-    {'name': 'Nexus S',
-     'snippet': 'Fast just got faster with Nexus S.'},
-    {'name': 'Motorola XOOM™ with Wi-Fi',
-     'snippet': 'The Next, Next Generation tablet.'},
-    {'name': 'MOTOROLA XOOM™',
-     'snippet': 'The Next, Next Generation tablet.'}
-  ];
+app.controller('PageCtrl', function (/* $scope, $location, $http */) {
+	this.page = 'about';
+	console.log('asd');
 });
