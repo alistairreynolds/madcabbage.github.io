@@ -1,19 +1,13 @@
-angular.module('PlaygroundPages', ['ngRoute'])
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider
+// create the current page
+var currentPage = {
+	title: 'About'
+};
 
-    .when('/about', {
-      templateUrl: 'templates/pages/about/index.html'
-    })
-    .when('/portfolio', {
-      templateUrl: 'templates/pages/portfilio/index.html'
-    })
-    .when('/',{
-		templateUrl: 'templates/pages/about/index.html'
-    })
-    .otherwise('/',{
-    	templateUrl: 'templates/pages/about/index.html'
-    })
-  ;
-
-}]);
+var pages = [
+	{
+		title: 'About'
+	},
+	{
+		title: 'Portfolio'
+	}
+];

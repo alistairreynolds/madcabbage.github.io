@@ -1,4 +1,4 @@
-app.controller('PageCtrl', function (/* $scope, $location, $http */) {
-	this.page = 'about';
-	console.log('asd');
+app.controller('PageCtrl', function () {
+	// Set the page to the current page property
+	this.page = currentPage;
 });

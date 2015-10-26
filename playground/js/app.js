@@ -9,14 +9,25 @@ app.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
     })
     .when('/portfolio', {
-      templateUrl: 'templates/pages/portfilio/index.html', controller: "PageCtrl"
+      templateUrl: 'templates/pages/portfolio/index.html', controller: "PageCtrl"
     })
     .when('/',{
-		templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
+		  templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
     })
+    .when('#',{
+      templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
+    })    
+    .when('/technologies',{
+      templateUrl: 'templates/pages/technologies/index.html', controller: "PageCtrl"
+    })
+    .when('/technologies/angular',{
+      templateUrl: 'templates/pages/technologies/angular.html', controller: "PageCtrl"
+    })    
     .otherwise('/',{
     	templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
     })
   ;
 
 }]);
+
+
