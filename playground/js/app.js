@@ -6,25 +6,25 @@ app.config(['$routeProvider', function($routeProvider) {
 
     // Create each route destination
     .when('/about', {
-      templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
+      templateUrl: 'templates/pages/about/index.html', controller: 'PageCtrl'
     })
     .when('/portfolio', {
-      templateUrl: 'templates/pages/portfolio/index.html', controller: "PageCtrl"
+      templateUrl: 'templates/pages/portfolio/index.html', controller: 'PageCtrl'
     })
-    .when('/',{
-		  templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
-    })
-    .when('#',{
-      templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
-    })    
     .when('/technologies',{
-      templateUrl: 'templates/pages/technologies/index.html', controller: "PageCtrl"
+      templateUrl: 'templates/pages/technologies/index.html', controller: 'PageCtrl'
     })
     .when('/technologies/angular',{
-      templateUrl: 'templates/pages/technologies/angular.html', controller: "PageCtrl"
-    })    
+      templateUrl: 'templates/pages/technologies/angular.html', controller: 'PageCtrl'
+    })
+    .when('/',{
+      redirectTo: '/about'
+    })
+    .when('#',{
+      redirectTo: '/about'
+    })        
     .otherwise('/',{
-    	templateUrl: 'templates/pages/about/index.html', controller: "PageCtrl"
+    	redirectTo: 'about'
     })
   ;
 
