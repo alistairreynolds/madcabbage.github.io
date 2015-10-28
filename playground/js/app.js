@@ -1,21 +1,20 @@
 // Setup a router
-var app = angular.module('Playground', ['ngRoute']);
-
-app.config(['$routeProvider', function($routeProvider) {
+var PlaygroundApp = angular.module('PlaygroundApp', ['ngRoute']);
+PlaygroundApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
 
     // Create each route destination
     .when('/about', {
-      templateUrl: 'templates/pages/about/index.html', controller: 'PageCtrl'
+      templateUrl: 'templates/pages/about/index.html', controller: 'AboutController'
     })
     .when('/portfolio', {
-      templateUrl: 'templates/pages/portfolio/index.html', controller: 'PageCtrl'
+      templateUrl: 'templates/pages/portfolio/index.html', controller: 'PortfilioController'
     })
     .when('/technologies',{
-      templateUrl: 'templates/pages/technologies/index.html', controller: 'PageCtrl'
+      templateUrl: 'templates/pages/technologies/index.html'//, controller: 'PageCtrl', controllerAs: 'pageController'
     })
     .when('/technologies/angular',{
-      templateUrl: 'templates/pages/technologies/angular.html', controller: 'PageCtrl'
+      templateUrl: 'templates/pages/technologies/angular.html'//, controller: 'PageCtrl', controllerAs: 'pageController'
     })
     .when('/',{
       redirectTo: '/about'
@@ -23,11 +22,9 @@ app.config(['$routeProvider', function($routeProvider) {
     .when('#',{
       redirectTo: '/about'
     })        
-    .otherwise('/',{
-    	redirectTo: 'about'
+    .otherwise({
+    	redirectTo: '/about'
     })
   ;
 
 }]);
-
-

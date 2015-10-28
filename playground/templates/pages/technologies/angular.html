@@ -1,0 +1,19 @@
+<!-- assign the controller. demo is the alias - like an instance of the Controller class - so we can use it here -->
+<div ng-controller="DemoController as demo">
+	<div class="col-sm-3 page-content">
+		<ul>
+			<!-- loop through each item and show it's name -->
+			<li ng-repeat="item in demo.items">{{item.name}}</li>
+		</ul>
+	</div>
+		<!-- only show it's description if it's visible property is true -->
+		<div ng-repeat="item in demo.items" ng-show="item.visible">
+			<div class="col-sm-6 page-content">
+				{{item.description}}
+			</div>
+			<div class="col-sm-3 page-content">
+				<!-- need to use ng-src for images so that it evalutes properly -->
+				<img class="img-responsive" width="100px" ng-src="{{item.image}}" alt="{{item.name}} logo"/>
+			</div>
+		</div>
+	</div>
