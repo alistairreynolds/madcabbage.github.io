@@ -5,10 +5,10 @@ PlaygroundApp.config(['$routeProvider', function($routeProvider) {
 
     // Create each route destination
     .when('/about', {
-      templateUrl: 'templates/pages/about/index.html', controller: 'AboutController'
+      templateUrl: 'templates/pages/about/index.html'
     })
     .when('/portfolio', {
-      templateUrl: 'templates/pages/portfolio/index.html', controller: 'PortfilioController'
+      templateUrl: 'templates/pages/portfolio/index.html'
     })
     .when('/technologies',{
       templateUrl: 'templates/pages/technologies/index.html'//, controller: 'PageCtrl', controllerAs: 'pageController'

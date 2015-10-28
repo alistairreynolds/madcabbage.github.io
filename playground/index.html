@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <!-- need to assign the angular app and controller to use -->
-<body ng-app="PlaygroundApp">
+<body ng-app="PlaygroundApp" ng-controller="PageController as page">
 
   <!-- normal nav bar -->
   <nav class="navbar navbar-default navbar-static-top navbar-inverse">
@@ -24,14 +24,33 @@
               routing sets the # to load the correct template
               click binds the event to the relevant property
               class sets the class as active -->
-          <li ng-click="currentPage = 'About'" ng-class="{active:currentPage === 'About'}"><a href="#about">About</a></li>
-          <li ng-click="currentPage = 'Portfilo'" ng-class="{active:currentPage === 'Portfilio'}"><a href="#portfolio">Portfolio</a></li>
+          <li 
+            ng-click="page.setPage('About')" 
+            ng-class="{active:page.isCurrentPage('About')}">
+              <a href="#about">About</a>
+          </li>
+          <li 
+            ng-click="page.setPage('Portfolio')" 
+            ng-class="{active:page.isCurrentPage('Portfilio')}">
+              <a href="#portfolio">Portfolio</a>
+          </li>
           <!-- dropdown menu -->
           <li class="dropdown">
-            <a href="" data-toggle="dropdown">Technologies<span class="caret"></span></a>
+            <a href="" data-toggle="dropdown">
+              Technologies
+              <span class="caret"></span>
+            </a>
             <ul class="dropdown-menu">
-              <li><a href="#technologies">Technologies on this site</a></li>
-              <li><a href="#technologies/angular">Angular</a></li>
+              <li
+                ng-click="page.setPage('Technologies')" 
+                ng-class="{active:page.isCurrentPage('Technologies')}">
+                  <a href="#technologies">Technologies on this site</a>
+              </li>
+             <li
+                ng-click="page.setPage('Angular')" 
+                ng-class="{active:page.isCurrentPage('Angular')}">
+                  <a href="#technologies/angular">Angular</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -42,7 +61,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="well" ng-controller="PageController"><h1>{{currentPage}}</h1></div>
+        <div class="well" ng-controller="PageController"><h1>{{page.currentPage}}</h1></div>
       </div>
     </div>
     <div class="row page-content">

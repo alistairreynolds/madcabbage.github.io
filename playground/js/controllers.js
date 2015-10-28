@@ -1,14 +1,14 @@
-PlaygroundApp.controller('AboutController', function ($scope) {
-	currentPage.title = "About";
-});
-
-PlaygroundApp.controller('PortfilioController', function ($scope) {
-	currentPage.title = "Portfilo";
-});
-
 PlaygroundApp.controller('PageController', function() {
-	//$scope.tile = currentPage;
-	console.log(currentPage.title);
+	this.currentPage = 'About';
+
+	this.setPage = function(page){
+		this.currentPage = page;
+	}
+
+	this.isCurrentPage = function(pageCheck){
+		return this.currentPage === pageCheck;
+	}
+
 });
 
 PlaygroundApp.controller('DemoController', function(){
