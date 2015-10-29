@@ -1,3 +1,4 @@
+// Main page controller which will set the title and active menu item
 PlaygroundApp.controller('PageController', function() {
 	this.currentPage = 'About';
 
@@ -13,11 +14,14 @@ PlaygroundApp.controller('PageController', function() {
 
 PlaygroundApp.controller('DemoController', function(){
 	this.items = demoItems;
-})
+	this.currentTab = 0;
 
-/*
-PlaygroundApp.controller('PageController', function () {
-	this.title = "rawr";
-	// Set the page to the current page property
-	//this.page = currentPage;
-});*/
+	// Set the current tab being used
+	this.setTab = function(tab){
+		this.currentTab = tab;
+		for(item of this.items){
+			item.visible = false;
+		};
+		this.items[tab].visible = true;
+	}
+});

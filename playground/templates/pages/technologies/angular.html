@@ -3,7 +3,11 @@
 	<div class="col-sm-3 page-content">
 		<ul>
 			<!-- loop through each item and show it's name -->
-			<li ng-repeat="item in demo.items">{{item.name}}</li>
+			<li ng-repeat="item in demo.items" ng-click="demo.setTab(item.id)">
+				<a href="">
+					{{item.name}}
+				</a>
+			</li>
 		</ul>
 	</div>
 		<!-- only show it's description if it's visible property is true -->

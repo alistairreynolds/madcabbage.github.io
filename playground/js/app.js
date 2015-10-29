@@ -11,10 +11,10 @@ PlaygroundApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'templates/pages/portfolio/index.html'
     })
     .when('/technologies',{
-      templateUrl: 'templates/pages/technologies/index.html'//, controller: 'PageCtrl', controllerAs: 'pageController'
+      templateUrl: 'templates/pages/technologies/index.html'
     })
     .when('/technologies/angular',{
-      templateUrl: 'templates/pages/technologies/angular.html'//, controller: 'PageCtrl', controllerAs: 'pageController'
+      templateUrl: 'templates/pages/technologies/angular.html'
     })
     .when('/',{
       redirectTo: '/about'

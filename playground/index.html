@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<!-- need to assign the angular app and controller to use -->
+<!-- need to assign the angular app and controller to use. App will control the routing, controller will control the pages -->
 <body ng-app="PlaygroundApp" ng-controller="PageController as page">
 
   <!-- normal nav bar -->
@@ -16,7 +16,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span> 
         </button>      
-        <div class="navbar-brand"><a href="#/">Al's demo site</a></div>
+        <div 
+          class="navbar-brand"            
+          ng-click="page.setPage('About')" 
+          ng-class="{active:page.isCurrentPage('About')}">
+            <a href="#/">Al's demo site</a>
+        </div>
       </div>
       <div class="collapse navbar-collapse" id="navBar">
         <ul class="nav navbar-nav navbar-right">
