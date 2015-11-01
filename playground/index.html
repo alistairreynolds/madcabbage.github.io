@@ -19,7 +19,7 @@
         <div 
           class="navbar-brand"            
           ng-click="page.setPage('About')" 
-          ng-class="{active:page.isCurrentPage('About')}">
+          ng-class="{active: page.isCurrentPage('About')}">
             <a href="#/">Al's demo site</a>
         </div>
       </div>
@@ -31,29 +31,28 @@
               class sets the class as active -->
           <li 
             ng-click="page.setPage('About')" 
-            ng-class="{active:page.isCurrentPage('About')}">
+            ng-class="{active: page.isCurrentPage('About')}">
               <a href="#about">About</a>
           </li>
           <li 
             ng-click="page.setPage('Portfolio')" 
-            ng-class="{active:page.isCurrentPage('Portfilio')}">
+            ng-class="{active: page.isCurrentPage('Portfolio')}">
               <a href="#portfolio">Portfolio</a>
           </li>
           <!-- dropdown menu -->
-          <li class="dropdown">
+          <li class="dropdown"
+              ng-class="{active:page.isCurrentPage('Technologies')}">
             <a href="" data-toggle="dropdown">
               Technologies
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li
-                ng-click="page.setPage('Technologies')" 
-                ng-class="{active:page.isCurrentPage('Technologies')}">
+                ng-click="page.setPage('Technologies')">
                   <a href="#technologies">Technologies on this site</a>
               </li>
              <li
-                ng-click="page.setPage('Angular')" 
-                ng-class="{active:page.isCurrentPage('Angular')}">
+                ng-click="page.setPage('Technologies')">
                   <a href="#technologies/angular">Angular</a>
               </li>
             </ul>
@@ -66,7 +65,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="well" ng-controller="PageController"><h1>{{page.currentPage}}</h1></div>
+        <div class="well ng-cloak" ng-cloak ng-controller="PageController"><h1>{{page.currentPage}}</h1></div>
       </div>
     </div>
     <div class="row page-content">

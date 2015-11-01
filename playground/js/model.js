@@ -1,15 +1,3 @@
-// create the current page
-var currentPage = 'About';
-
-var pages = [
-	{
-		title: 'About'
-	},
-	{
-		title: 'Portfolio'
-	}
-];
-
 // Creating an array for our demo items
 var demoItems = [
 	{
