@@ -2,8 +2,12 @@
 PlaygroundApp.controller('PageController', function($scope, $route, $routeParams, $location, $rootScope, $window) {
 
 	hash = $window.location.hash
-
-	this.currentPage = hash.substring(2,3).toUpperCase() + hash.substring(3, hash.length);
+	
+	if(hash){
+		this.currentPage = hash.substring(2,3).toUpperCase() + hash.substring(3, hash.length);
+	}else{
+		this.currentPage = "About";
+	}
 
 	this.setPage = function(page){
 		this.currentPage = page;
