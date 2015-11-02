@@ -1,5 +1,26 @@
-<div class="col-sm-6 page-content">
-My Portfilio will go here once I figure out some more things about how it all works!
+<div ng-controller="PortfolioController as port">
+	<div class="col-sm-12 page-content">
+		<p>Here you can find websites that I've either created, helped create, and/or designed.</p>
+	</div>
+	<div class="col-sm-3 page-content">
+		<ul>
+			<!-- loop through each item and show it's name -->
+			<li ng-repeat="item in port.items" ng-click="port.setTab(item.id)">
+				<a href="">
+					{{item.name}}
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- only show it's description if it's visible property is true -->
+	<div ng-repeat="item in port.items" ng-show="item.visible">
+		<div class="col-sm-6 page-content">
+			<p><a href="{{item.url}}" target="_blank"><strong>{{item.urlFriendly}}</strong></a></p>
+			<p>{{item.description}}</p>
+		</div>
+		<div class="col-sm-3 page-content">
+			<!-- need to use ng-src for images so that it evalutes properly -->
+			<a target="_blank" href="images/responsive_resized/portfolio/{{item.imageLarge}}"><img class="img-responsive" ng-src="images/responsive_resized/portfolio/{{item.imageSmall}}" alt="{{item.name}} screenshot"/></a>
+		</div>
+	</div>
 </div>
-<div class="col-sm-6"></div>
- 

@@ -24,7 +24,6 @@ PlaygroundApp.config(['$routeProvider', function($routeProvider) {
     })        
     .otherwise({
     	redirectTo: '/about'
-    })
-  ;
+    });
 
 }]);

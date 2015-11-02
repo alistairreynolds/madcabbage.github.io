@@ -1,6 +1,9 @@
 // Main page controller which will set the title and active menu item
-PlaygroundApp.controller('PageController', function() {
-	this.currentPage = 'About';
+PlaygroundApp.controller('PageController', function($scope, $route, $routeParams, $location, $rootScope, $window) {
+
+	hash = $window.location.hash
+
+	this.currentPage = hash.substring(2,3).toUpperCase() + hash.substring(3, hash.length);
 
 	this.setPage = function(page){
 		this.currentPage = page;
@@ -25,3 +28,17 @@ PlaygroundApp.controller('DemoController', function(){
 		this.items[tab].visible = true;
 	}
 });
+
+PlaygroundApp.controller('PortfolioController', function(){
+	this.items = portfolioItems;
+	this.currentTab = 0;
+
+	this.setTab = function(tab){
+		this.currentTab = tab;
+		for(item of this.items){
+			item.visible = false;
+		};
+		this.items[tab].visible = true;
+	}
+
+})
