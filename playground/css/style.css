@@ -10,3 +10,9 @@ body {
 .container, .well {
   background: rgba(10, 10, 10, 0.9);
 }
+
+/* line 19, ../../sass/style.scss */
+.navbar-nav {
+  margin: 0;
+  padding: 0 15px;
+}

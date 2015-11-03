@@ -1,6 +1,6 @@
 // Setup a router
 var PlaygroundApp = angular.module('PlaygroundApp', ['ngRoute']);
-PlaygroundApp.config(['$routeProvider', function($routeProvider) {
+PlaygroundApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
 
     // Create each route destination
@@ -27,3 +27,10 @@ PlaygroundApp.config(['$routeProvider', function($routeProvider) {
     });
 
 }]);
+
+// Used to collapse bootstrap menu when navigating
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});

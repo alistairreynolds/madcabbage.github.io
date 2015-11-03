@@ -9,7 +9,7 @@
 <body ng-app="PlaygroundApp" ng-controller="PageController as page">
 
   <!-- normal nav bar -->
-  <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <nav class="navbar navbar-static-top navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
@@ -31,15 +31,11 @@
               click binds the event to the relevant property
               class sets the class as active -->
           <li 
-            data-toggle="collapse" 
-            data-target="#navBar"
             ng-click="page.setPage('About')" 
             ng-class="{active: page.isCurrentPage('About')}">
               <a href="#about">About</a>
           </li>
-          <li 
-            data-toggle="collapse"
-            data-target="#navBar"      
+          <li    
             ng-click="page.setPage('Portfolio')" 
             ng-class="{active: page.isCurrentPage('Portfolio')}">
               <a href="#portfolio">Portfolio</a>
@@ -53,14 +49,10 @@
             </a>
             <ul class="dropdown-menu">
               <li
-                data-toggle="collapse" 
-                data-target="#navBar"
                 ng-click="page.setPage('Technologies')">
                   <a href="#technologies">Technologies on this site</a>
               </li>
              <li
-                data-toggle="collapse" 
-                data-target="#navBar"
                 ng-click="page.setPage('Technologies')">
                   <a href="#technologies/angular">Angular</a>
               </li>
