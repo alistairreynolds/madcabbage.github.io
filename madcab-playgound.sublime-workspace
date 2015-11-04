@@ -100,50 +100,37 @@
 	"buffers":
 	[
 		{
-			"file": "playground/index.html",
+			"contents": "export PATH=$PATH:/Users/Alistair/.composer/vendor/bin\n",
+			"file": "playground/php/includes/composer/composer.json",
+			"file_size": 1,
+			"file_write_time": 130910557240000000,
 			"settings":
 			{
-				"buffer_size": 3557,
+				"buffer_size": 55,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "playground/templates/pages/technologies/angular.html",
+			"file": "/etc/hosts",
 			"settings":
 			{
-				"buffer_size": 1170,
+				"buffer_size": 315,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "playground/templates/pages/portfolio/index.html",
+			"file": "/Applications/XAMPP/xamppfiles/etc/httpd.conf",
 			"settings":
 			{
-				"buffer_size": 1076,
+				"buffer_size": 19054,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "playground/js/model.js",
+			"file": "/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
 			"settings":
 			{
-				"buffer_size": 4159,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "playground/js/controllers.js",
-			"settings":
-			{
-				"buffer_size": 1074,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "playground/js/app.js",
-			"settings":
-			{
-				"buffer_size": 746,
+				"buffer_size": 2765,
 				"line_ending": "Unix"
 			}
 		}
@@ -155,10 +142,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 367.0,
-		"last_filter": "insta",
+		"height": 87.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"compass",
+				"Build With: Compass"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -166,10 +165,6 @@
 			[
 				"package",
 				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Advanced Install Package"
 			],
 			[
 				"asc",
@@ -296,7 +291,7 @@
 				"Package Control: Enable Package"
 			]
 		],
-		"width": 467.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -318,30 +313,32 @@
 	"expanded_folders":
 	[
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/node_modules/compass",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/bower_components",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/bower_components/angular-route",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/bower_components/jquery",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/bower_components/jquery/dist",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/css",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/js",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/about",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/portfolio",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/technologies",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/sass"
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/tmp"
 	],
 	"file_history":
 	[
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/php/index.php",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/index.html",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/technologies/angular.html",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/js/model.js",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/js/controllers.js",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/js/app.js",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/sass/style.scss",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/config.rb",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/node_modules/compass/README.md",
+		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/portfolio/index.html",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/js/angular-bootstrap-lightbox.min.js",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/css/angular-bootstrap-lightbox.min.css",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/technologies/index.html",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/technologies/angular.html",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/about/index.html",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/portfolio/index.html",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/Gruntfile.js",
-		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/js/controllers.js",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/templates/pages/index/index.html",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/playground/index.php",
 		"/Users/Alistair/Documents/git/private-projects/madcabbage.github.io/www/index.html",
@@ -454,14 +451,7 @@
 		"/C/Users/Al/AppData/Roaming/Sublime Text 2/Packages/JSHint Gutter/Default (Windows).sublime-keymap",
 		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/3-frogger/www/js/engine.js",
 		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/3-frogger/www/js/resources.js",
-		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/3-frogger/www/js/app.js",
-		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/3-frogger/www/index.html",
-		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/www/3-frogger/www/js/resources.js",
-		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/www/3-frogger/www/index.html",
-		"/D/Game_Apps/BReWErS.nfo",
-		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/www/3-frogger/index.html",
-		"/D/Game_Apps/Borderlands_1.42/h4x0r.nfo",
-		"/E/Documents/Udacity/Front-end-web-dev/projects/2-resume/www/index.html"
+		"/E/Documents/Udacity/Front-end-web-dev/projects/3-frogger/3-frogger/www/js/app.js"
 	],
 	"find":
 	{
@@ -569,88 +559,29 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "playground/index.html",
+					"file": "playground/php/includes/composer/composer.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3557,
+						"buffer_size": 55,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3256,
-								3256
+								55,
+								55
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 231.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "playground/templates/pages/technologies/angular.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1170,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								394,
-								394
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "playground/templates/pages/portfolio/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1076,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								928,
-								928
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -660,57 +591,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "playground/js/model.js",
+					"buffer": 1,
+					"file": "/etc/hosts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4159,
+						"buffer_size": 315,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4138,
-								4138
+								261,
+								261
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1012.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "playground/js/controllers.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1074,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								122,
-								122
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -720,31 +619,60 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "playground/js/app.js",
+					"buffer": 2,
+					"file": "/Applications/XAMPP/xamppfiles/etc/httpd.conf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 746,
+						"buffer_size": 19054,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80,
-								80
+								18142,
+								18142
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7082.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1874,
+								1874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 437.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -786,7 +714,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 100.0
+		"height": 148.0
 	},
 	"output.find_results":
 	{
