@@ -1,10 +1,6 @@
 @extends('app')
 
-@section('header')
-
-<h1>Contact</h1>
-
-@stop
+@section('header') Contact @stop
 
 @section('content')
 

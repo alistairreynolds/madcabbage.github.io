@@ -34,7 +34,7 @@ var portfolioItems = [
 		url: 'https://www.myzonelaser.com/onlinebookings/#/basic/1104',
 		urlFriendly: 'www.myzonelaser.com/onlinebookings',
 		used: 'Angular, Laravel, OpenVPN',
-		description: 'A part of Banksia is the Online Bookings website, which allows people to create a booking for a centre running BanksiaFEMS from a PC or mobile. Although I managed the project of this website instead of code it, I designed the site and lead the design of how the communication would work from the website to the centre. This site was built using Angular and Laravel, with an OpenVPN connection for communication.',
+		description: 'A part of Banksia is the Online Bookings website, which allows people to create a booking for a centre running BanksiaFEMS from a PC or mobile. Instead of coding this website, I managed the project, designed the website, and lead the design of how the communication would work from the website to the centre. This site was built using Angular and Laravel, with an OpenVPN connection for communication.',
 		imageSmall: 'bookings-320.png',
 		imageLarge: 'bookings-1024.png'
 	},
@@ -56,7 +56,7 @@ var portfolioItems = [
 		url: 'http://www.rostertimeclock.com',
 		urlFriendly: 'www.rostertimeclock.com',
 		used: 'Laravel',
-		description: 'Another part of Banksia is an Online Rostering system, which allows staff to see their future and past shifts online. It also includes SMS notifications to inform staff of when their shifts are about to start. As with the Banksia website, I designed and managed the project for this side instead of coding it.',
+		description: 'Another part of Banksia is an Online Rostering system, which allows staff to see their future and past shifts online. It also includes SMS notifications to inform staff of when their shifts are about to start. As with the Banksia website, I designed and managed the project for this site instead of coding it.',
 		imageSmall: 'roster-320.png',
 		imageLarge: 'roster-1024.png'		
 	},

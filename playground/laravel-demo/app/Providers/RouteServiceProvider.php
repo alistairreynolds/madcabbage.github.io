@@ -27,6 +27,17 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot($router);
+
+        $router->model('films', 'App\Film');
+
+        // Don't need this as we only want route binding for the genre by name
+       // $router->model('genres', 'App\Genre');
+
+        // Overriding the genres route binding so that it can accept a name of a genre instead of an id
+        $router->bind('genres', function($name){
+            return \App\Genre::where('name', $name)->first();
+        });
+
     }
 
     /**

@@ -18,9 +18,16 @@ class CreateFilmsTable extends Migration
             $table->string('released', 4);
             $table->string('imdb', 16);
             $table->string('trailer');
-            $table->string('description');
-            $table->boolean('watched');
+            $table->string('summary');
+            $table->text('summary_full');
+            $table->string('watch');
+            $table->integer('added_by')->unsigned();
+            $table->string('image');
             $table->timestamps();
+
+            $table->foreign('added_by')
+                ->references('id')
+                ->on('users');
         });
     }
 

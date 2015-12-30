@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAEA;EAAK,YAAY,EAAG;;AACpB;EAAc,aAAa,EAAG","file":"app.css","sourcesContent":["// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\nh1 a{color: #333;}\nh1 .glyphicon{float: right;}"],"sourceRoot":"/source/"}
