@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Tina</title>
+    <link rel="stylesheet" href="css/slider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="content">
+<div class="Wallop Wallop--slide">
+    <div class="Wallop-list">
+        <div class="Wallop-item"><img src="images/1.jpg"></div>
+        <div class="Wallop-item"><img src="images/2.jpg"></div>
+        <div class="Wallop-item"><img src="images/3.jpg"></div>
+        <div class="Wallop-item"><img src="images/4.jpg"></div>
+    </div>
+
+    <button class="Wallop-buttonPrevious">Previous</button>
+    <button class="Wallop-buttonNext">Next</button>
+</div>
+
+    <div class="Wallop-buttonNext question q1">
+        Will
+    </div>
+    <div class="Wallop-buttonNext question q2">
+        you
+    </div>
+    <div class="Wallop-buttonNext question q3">
+        marry
+    </div>
+    <div class="Wallop-buttonNext question q4">
+        me?
+
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/slider.min.js"></script>
+<script>
+    var wallopEl = document.querySelector('.Wallop');
+    var slider = new Wallop(wallopEl);
+    var counter = 1;
+
+//    $(document).bind('mobileinit',function(){
+//        $.mobile.changePage.defaults.changeHash = false;
+//        $.mobile.hashListeningEnabled = false;
+//        $.mobile.pushStateEnabled = false;
+//    });
+
+    $(document).ready(function(){
+        $('body').on("click", function() {
+            slider.next();
+            switch (counter){
+                case 1:
+                    $('.q1').fadeOut( "slow", function() {
+                        $('.q2').fadeIn("slow", function(){})
+                    });
+                    break;
+                case 2:
+                    $('.q2').fadeOut( "slow", function() {
+                        $('.q3').fadeIn("slow", function(){})
+                    });
+                    break;
+                case 3:
+                    $('.q3').fadeOut( "slow", function() {
+                        $('.q4').fadeIn("slow", function(){})
+                    });
+                    break;
+                default:
+                    counter = 0;
+                    $('.q4').fadeOut( "slow", function() {
+                        $('.q1').fadeIn("slow", function(){});
+                        $('.yes').fadeIn("slow", function(){});
+                        $('.no').fadeIn("slow", function(){});
+                    });
+                    break;
+            }
+            counter ++;
+        });
+
+        $('.content').on("swipeleft", function() {
+            slider.next();
+            switch (counter){
+                case 1:
+                    $('.q1').fadeOut( "slow", function() {
+                        $('.q2').fadeIn("slow", function(){})
+                    });
+                    break;
+                case 2:
+                    $('.q2').fadeOut( "slow", function() {
+                        $('.q3').fadeIn("slow", function(){})
+                    });
+                    break;
+                case 3:
+                    $('.q3').fadeOut( "slow", function() {
+                        $('.q4').fadeIn("slow", function(){})
+                    });
+                    break;
+                default:
+                    counter = 0;
+                    $('.q4').fadeOut( "slow", function() {
+                        $('.q1').fadeIn("slow", function(){})
+                    });
+                    break;
+            }
+            counter ++;
+        });
+
+
+
+    });
+
+
+</script>
+</html>
