@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae4c077-db4c-4063-8c5f-162e68b37d6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tina/index.html" afterPath="$PROJECT_DIR$/../../tina/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/1.jpg" afterPath="$PROJECT_DIR$/images/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/2.jpg" afterPath="$PROJECT_DIR$/images/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/3.jpg" afterPath="$PROJECT_DIR$/images/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/4.jpg" afterPath="$PROJECT_DIR$/images/4.jpg" />
     </list>
     <ignored path="tina.iws" />
     <ignored path=".idea/workspace.xml" />
